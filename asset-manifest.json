@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/mishu-app/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/mishu-app/static/js/main.7a25deef.chunk.js",
-    "main.js.map": "/mishu-app/static/js/main.7a25deef.chunk.js.map",
+    "main.css": "/mishu-app/static/css/main.a617e044.chunk.css",
+    "main.js": "/mishu-app/static/js/main.c9452e62.chunk.js",
+    "main.js.map": "/mishu-app/static/js/main.c9452e62.chunk.js.map",
     "runtime-main.js": "/mishu-app/static/js/runtime-main.87d4179a.js",
     "runtime-main.js.map": "/mishu-app/static/js/runtime-main.87d4179a.js.map",
     "static/js/2.93335d3c.chunk.js": "/mishu-app/static/js/2.93335d3c.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.15b108cd.chunk.js": "/mishu-app/static/js/3.15b108cd.chunk.js",
     "static/js/3.15b108cd.chunk.js.map": "/mishu-app/static/js/3.15b108cd.chunk.js.map",
     "index.html": "/mishu-app/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/mishu-app/static/css/main.8c8b27cf.chunk.css.map",
+    "static/css/main.a617e044.chunk.css.map": "/mishu-app/static/css/main.a617e044.chunk.css.map",
     "static/js/2.93335d3c.chunk.js.LICENSE.txt": "/mishu-app/static/js/2.93335d3c.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/mishu-app/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.87d4179a.js",
     "static/js/2.93335d3c.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.7a25deef.chunk.js"
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.c9452e62.chunk.js"
   ]
 }
