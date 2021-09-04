@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/mishu-app/static/css/main.a617e044.chunk.css",
-    "main.js": "/mishu-app/static/js/main.c9452e62.chunk.js",
-    "main.js.map": "/mishu-app/static/js/main.c9452e62.chunk.js.map",
+    "main.js": "/mishu-app/static/js/main.d16f99a5.chunk.js",
+    "main.js.map": "/mishu-app/static/js/main.d16f99a5.chunk.js.map",
     "runtime-main.js": "/mishu-app/static/js/runtime-main.87d4179a.js",
     "runtime-main.js.map": "/mishu-app/static/js/runtime-main.87d4179a.js.map",
     "static/js/2.93335d3c.chunk.js": "/mishu-app/static/js/2.93335d3c.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.87d4179a.js",
     "static/js/2.93335d3c.chunk.js",
     "static/css/main.a617e044.chunk.css",
-    "static/js/main.c9452e62.chunk.js"
+    "static/js/main.d16f99a5.chunk.js"
   ]
 }
