@@ -1,0 +1,44 @@
+:root {
+  --primary: #1888ff;
+}
+
+.btn {
+  display: flex;
+  flex: 0 auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 15px;
+  color: #000;
+  font-size: 1.063em;
+  font-family: Roboto, sans-serif;
+  /* line-height: 1.25em; */
+  /* text-align: center; */
+  padding: 0.688em 20px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.03);
+  box-shadow: 3px 4px 5px -3px #000;
+  transition: all 200ms ease;
+  width: 10.8em;
+}
+
+.btn:hover {
+  /* transition: all 0.3s ease-out; */
+  border-radius: 5px;
+  /* border: 2px solid var(--primary); */
+  background-color: rgba(42, 94, 145, 0.15);
+  box-shadow: 5px 6px 15px -6px #000;
+}
+
+.btn img {
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 960px) {
+  .btn {
+    display: none;
+  }
+}

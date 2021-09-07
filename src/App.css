@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(47, 72, 156, 0.36)),
+    to(#fff)
+  );
+  background-image: linear-gradient(180deg, rgba(47, 72, 156, 0.36), #fff);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.acasa,
+.servicii {
   display: flex;
-  flex-direction: column;
+  height: 90vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 3rem;
 }
 
-.App-link {
-  color: #61dafb;
+.acasa {
+  /* background-image: url("./images/img-1.jpg"); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  font-size: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.servicii {
+  /* background-image: url("./images/img-3.jpg"); */
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: black;
+  font-size: 100px;
+}
+
+.page-background {
+  background-color: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(47, 72, 156, 0.36)),
+    to(#fff)
+  );
+  background-color: linear-gradient(180deg, rgba(47, 72, 156, 0.36), #fff);
 }
