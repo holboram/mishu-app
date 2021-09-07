@@ -13,7 +13,7 @@ const Navbar = () => {
   const closeMobileMenu = () => setClick(false);
 
   return (
-    <Fragment>
+    <div className="navbar-container">
       <nav className="navbar">
         <NavLink to="/" className="navbar-logo" onClick={closeMobileMenu}>
           <img
@@ -66,7 +66,7 @@ const Navbar = () => {
         </ul>
         <Button />
       </nav>
-    </Fragment>
+    </div>
   );
 };
 

@@ -9,14 +9,15 @@ import Acasa from "./components/pages/Acasa";
 
 const App = () => {
   return (
-    <Fragment>
+    <div className="background-container">
       <Navbar />
+
       <Switch>
         <Route path="/mishu-app" exact component={Acasa} />
         <Route path="/" exact component={Acasa} />
         <Route path="/servicii" exact component={Servicii} />
       </Switch>
-    </Fragment>
+    </div>
   );
 };
 

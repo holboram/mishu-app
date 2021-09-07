@@ -18,14 +18,16 @@
 .navbar-logo {
   color: #fff;
   justify-self: start;
-  /* margin-left: 20px; */
+  margin-left: 20px;
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
 }
 
 .nav-menu {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
   list-style: none;
   text-align: center;
   width: 70vw;
@@ -47,7 +49,11 @@
   transition: all 0.2s ease-out;
   border-style: none none solid;
   border-color: transparent transparent #000;
-  border-width: 0px opx 2px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .border {
@@ -76,11 +82,20 @@
     padding: 0 30px;
   }
 
+  .navbar {
+    width: 100vw;
+    /* padding: 0 30px; */
+  }
+
+  /* .navbar-logo img {
+    margin-right: -80px;
+  } */
+
   .nav-menu {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 100%;
+    width: 100vw;
     height: 90vh;
     position: absolute;
     top: 80px;
