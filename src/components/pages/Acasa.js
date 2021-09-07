@@ -4,8 +4,12 @@ import Hero from "./Hero";
 const Acasa = () => {
   return (
     <>
-      <Hero />
+      {/* <section>
+        <Hero />
+      </section> */}
+
       <section>
+        <Hero />
         <h2 className="acasa">ACASA</h2>
       </section>
     </>
