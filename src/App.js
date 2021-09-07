@@ -12,6 +12,7 @@ const App = () => {
     <Fragment>
       <Navbar />
       <Switch>
+        <Route path="/mishu-app" exact component={Acasa} />
         <Route path="/" exact component={Acasa} />
         <Route path="/servicii" exact component={Servicii} />
       </Switch>
