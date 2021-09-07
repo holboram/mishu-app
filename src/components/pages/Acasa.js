@@ -4,13 +4,13 @@ import Hero from "./Hero";
 const Acasa = () => {
   return (
     <>
-      {/* <section>
+      <section>
         <Hero />
-      </section> */}
+      </section>
 
       <section>
         <Hero />
-        {/* <h2 className="acasa">ACASA</h2> */}
+        <h2 className="acasa">ACASA</h2>
       </section>
     </>
   );

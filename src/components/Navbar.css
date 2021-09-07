@@ -12,13 +12,11 @@
   font-family: Roboto, sans-serif;
   line-height: 1rem;
   font-weight: 700;
-  /* padding: 0 60px; */
 }
 
 .navbar-logo {
   color: #fff;
   justify-self: start;
-  /* margin-left: 20px; */
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
@@ -41,10 +39,11 @@
   border-style: none none solid;
   border-width: 0px 0px 2px;
   border-color: transparent;
+  cursor: pointer;
 }
 
 .nav-item:hover {
-  transition: all 0.2s ease-out;
+  transition: all 0.3s ease-out;
   border-style: none none solid;
   border-color: transparent transparent #000;
   border-width: 0px opx 2px;
@@ -71,9 +70,16 @@
   display: none;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 991px) {
+  /* Table View */
   .navbar-container {
-    padding: 0 30px;
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* Mobile Landscape View */
+  .navbar-container {
+    padding: 0 40px;
   }
 
   .nav-menu {
@@ -113,7 +119,7 @@
   .navbar-logo {
     position: absolute;
     top: 0;
-    left: -20px;
+    left: 12px;
     transform: translate(25%, 50%);
   }
 
@@ -121,7 +127,7 @@
     display: block;
     position: absolute;
     top: 10px;
-    right: 0;
+    right: 15px;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
@@ -140,7 +146,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     padding: 1.5rem;
     margin: 2rem auto;
     border-radius: 4px;
@@ -162,6 +167,48 @@
   }
 
   button {
+    display: none;
+  }
+}
+@media screen and (max-width: 479px) {
+  /* Mobile Portrait View */
+  .navbar-container {
+    padding: 0 30px;
+  }
+
+  .menu-icon {
+    right: 6px;
+  }
+
+  .navbar-logo {
+    left: 2px;
+  }
+}
+
+@media screen and (max-width: 239px) {
+  .navbar-container {
+    padding: 0;
+  }
+
+  .menu-icon {
+    right: -20px;
+  }
+
+  .navbar-logo {
+    left: -25px;
+  }
+
+  .nav-links-mobile {
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .nav-links-mobile span {
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-links-mobile img {
     display: none;
   }
 }

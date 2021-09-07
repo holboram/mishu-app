@@ -9,7 +9,7 @@ import Acasa from "./components/pages/Acasa";
 
 const App = () => {
   return (
-    <div className="background-container">
+    <Fragment>
       <Navbar />
 
       <Switch>
@@ -17,7 +17,7 @@ const App = () => {
         <Route path="/" exact component={Acasa} />
         <Route path="/servicii" exact component={Servicii} />
       </Switch>
-    </div>
+    </Fragment>
   );
 };
 

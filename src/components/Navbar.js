@@ -60,7 +60,7 @@ const Navbar = () => {
                 alt="Iconita numar de telefon 0747 457 394"
                 width="39"
               />
-              Suna Acum
+              <span>Suna</span>&nbsp;Acum
             </NavLink>
           </li>
         </ul>
