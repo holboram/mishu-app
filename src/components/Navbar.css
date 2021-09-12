@@ -1,5 +1,7 @@
 .navbar-container {
   padding: 0 60px;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .navbar {
@@ -8,18 +10,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
-  font-family: Roboto, sans-serif;
-  line-height: 1rem;
-  font-weight: 700;
-}
-
-.navbar-logo {
-  color: #fff;
-  justify-self: start;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 2rem;
 }
 
 .nav-menu {
@@ -27,15 +17,15 @@
   list-style: none;
   text-align: center;
   width: 70vw;
-  justify-content: end;
-  margin-right: 2rem;
+  justify-content: flex-end;
+  margin-right: 2em;
 }
 
 .nav-item {
   display: flex;
   align-items: center;
   height: 80px;
-  padding: 0.5rem 1rem;
+  padding: 0.5em 1em;
   border-style: none none solid;
   border-width: 0px 0px 2px;
   border-color: transparent;
@@ -46,16 +36,28 @@
   transition: all 0.3s ease-out;
   border-style: none none solid;
   border-color: transparent transparent #000;
-  border-width: 0px opx 2px;
+  border-width: 0px 0px 2px;
 }
 
-.border {
-  border-width: 0px;
+.nav-item:visited {
+  border-color: transparent;
+}
+
+.nav-item.border {
+  border: none;
 }
 
 .nav-links {
+  font-family: Roboto, sans-serif;
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: 700;
   color: #000;
   text-decoration: none;
+}
+
+.nav-links.active {
+  background-color: tan;
 }
 
 .fa-bars {
@@ -95,7 +97,7 @@
     transition: all 0.5s ease;
   }
 
-  .nav-menu.active {
+  .nav-menu.on {
     background: #242222;
     left: 0;
     opacity: 1;
@@ -106,7 +108,7 @@
   .nav-links {
     color: white;
     text-align: center;
-    padding: 2rem;
+    padding: 2em;
     width: 150%;
     display: table;
   }
@@ -118,7 +120,7 @@
 
   .navbar-logo {
     position: absolute;
-    top: 0;
+    top: -12px;
     left: 12px;
     transform: translate(25%, 50%);
   }
@@ -126,16 +128,11 @@
   .menu-icon {
     display: block;
     position: absolute;
-    top: 10px;
+    top: -12px;
     right: 15px;
     transform: translate(-100%, 60%);
-    font-size: 1.8rem;
+    font-size: 1.8em;
     cursor: pointer;
-  }
-
-  .fa-times {
-    color: black;
-    font-size: 2rem;
   }
 
   .nav-item {
@@ -146,14 +143,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1.5rem;
-    margin: 2rem auto;
+    padding: 0.9em 1.5em;
+    margin: 0 auto;
     border-radius: 4px;
     width: 80%;
     background: #2f489c;
     text-decoration: none;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.5em;
+    font-weight: bold;
   }
 
   .nav-links-mobile img {
@@ -201,11 +199,11 @@
   .nav-links-mobile {
     flex-direction: column;
     width: 100%;
-    padding: 1rem;
+    padding: 1em;
   }
 
   .nav-links-mobile span {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5em;
   }
 
   .nav-links-mobile img {

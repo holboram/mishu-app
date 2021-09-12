@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from "react";
+import React, { useState } from "react";
 import Button from "./Button";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
@@ -13,7 +13,7 @@ const Navbar = () => {
   const closeMobileMenu = () => setClick(false);
 
   return (
-    <div className="navbar-container">
+    <header className="navbar-container">
       <nav className="navbar">
         <NavLink to="/" className="navbar-logo" onClick={closeMobileMenu}>
           <img
@@ -26,23 +26,23 @@ const Navbar = () => {
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
         </div>
-        <ul className={click ? "nav-menu active" : "nav-menu"}>
+        <ul className={click ? "nav-menu on" : "nav-menu"}>
           <li className="nav-item">
             <NavLink
-              to="/"
-              // activeClassName="active"
+              activeClassName="active"
               className="nav-links"
               onClick={closeMobileMenu}
+              to="/"
             >
               Acasă
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink
-              to="/servicii"
-              // activeClassName="active"
+              activeClassName="active"
               className="nav-links"
               onClick={closeMobileMenu}
+              to="/servicii"
             >
               Servicii
             </NavLink>
@@ -66,7 +66,7 @@ const Navbar = () => {
         </ul>
         <Button />
       </nav>
-    </div>
+    </header>
   );
 };
 
