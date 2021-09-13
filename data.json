@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "imgSrc": "/images/servicii-tehnice-botosani-suceava-min.jpg",
+    "loading": "lazy",
+    "width": "410",
+    "sizes": "(max-width: 479px) 85vw, (max-width: 767px) 65vw, (max-width: 991px) 48vw, 410px",
+    "alt": "Servicii de aer condiționat pe zona județelor Botoșani și Suceava",
+    "srcSet": "/mishu-app/images/servicii-tehnice-botosani-suceava-min-p-500.jpeg 500w, /mishu-app/images/servicii-tehnice-botosani-suceava-min-p-800.jpeg 800w, /mishu-app/images/servicii-tehnice-botosani-suceava-min.jpg 820w",
+    "imgCName": "img-cities",
+    "paragraph": "Fie că trebuie montat un aer condiționat, sau doar trebuie făcută mentenanța unui aer condiționat vechi care nu funcționează in parametri normali, noi suntem pregătiți să facem serviciul pentru dumneavoastră. Tehnicienii noștri experimentați oferă servicii pe zona județelor <strong>Botoșani</strong> și <strong>Suceava,</strong> și suntem dedicați să oferim un serviciu excelent și să satisfacem toate cerințele clientului.",
+    "paragraphCName": "paragraph"
+  },
+  {
+    "id": 2,
+    "imgSrc": "/images/servicii-tehnice-profesionalism-siguranta-rapiditate-min.jpg",
+    "loading": "lazy",
+    "width": "395.5",
+    "sizes": "(max-width: 479px) 85vw, (max-width: 767px) 65vw, (max-width: 991px) 48vw, 395.5px",
+    "alt": "Profesionalism, siguranța și rapiditate",
+    "srcSet": "/mishu-app/images/servicii-tehnice-profesionalism-siguranta-rapiditate-min-p-500.jpeg 500w, /mishu-app/images/servicii-tehnice-profesionalism-siguranta-rapiditate-min.jpg 791w",
+    "imgCName": "img-profesionalism",
+    "paragraph": "Un serviciu excelent începe cu un tehnician pregătit. Un tehnician pregătit îl găsiti la <strong>Servicii Tehnice</strong>. Credem că, clienții noștri ar trebui să se încreadă în tehnicienii lor la fel de mult cum se încred în noile lor aparate de aer condiționat. Instalatorii noștri au cele mai mari standarde de profesionalism și sunt dedicați excelenței în fiecare stagiu al procesului de instalare.",
+    "paragraphCName": "paragraph"
+  }
+]
