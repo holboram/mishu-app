@@ -30,12 +30,12 @@ const Hero = () => {
       </div>
       <div className={classes["right-block"]}>
         <img
-          src={HeroImage}
+          srcSet={`${HeroImageMobile} 500w, ${HeroImageMobileLarge} 1116w`}
           loading="lazy"
           sizes="(max-width: 479px) 100vw, (max-width: 767px) 83vw, (max-width: 991px) 42vw, 39vw"
           width="543"
+          src={HeroImage}
           alt="Instalare unitate internă și externă de aer condiționat"
-          srcSet={`${HeroImageMobile} 500w, ${HeroImageMobileLarge} 1116w`}
         />
       </div>
     </section>

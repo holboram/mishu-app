@@ -30,6 +30,7 @@ const Navbar = () => {
           <li className="nav-item">
             <NavLink
               activeClassName="active"
+              exact
               className="nav-links"
               onClick={closeMobileMenu}
               to="/"

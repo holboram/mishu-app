@@ -9,3 +9,7 @@
       "paragraph": "Un serviciu excelent începe cu un tehnician pregătit. Un tehnician pregătit îl găsiti la <strong>Servicii Tehnice</strong>. Credem că, clienții noștri ar trebui să se încreadă în tehnicienii lor la fel de mult cum se încred în noile lor aparate de aer condiționat. Instalatorii noștri au cele mai mari standarde de profesionalism și sunt dedicați excelenței în fiecare stagiu al procesului de instalare.",
       "paragraphCName": "paragraph--left"
     }
+
+    "srcSet": "images/servicii-tehnice-botosani-suceava-min-p-500.jpeg 500w, images/servicii-tehnice-botosani-suceava-min-p-800.jpeg 800w, images/servicii-tehnice-botosani-suceava-min.jpg 820w",
+
+    "homepage": "https://holboram.github.io/mishu-app/",
