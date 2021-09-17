@@ -1,10 +1,10 @@
 import React from "react";
-import ButtonServicii from "../ButtonServicii";
+import ButtonService from "./ButtonService";
 import classes from "./Hero.module.scss";
 
-import HeroImage from "../../images/hero-image-instalare-aer-conditionat-min.png";
-import HeroImageMobile from "../../images/hero-image-instalare-aer-conditionat-min-p-500.png";
-import HeroImageMobileLarge from "../../images/hero-image-instalare-aer-conditionat-min.png";
+import HeroImage from "../assets/hero-image-instalare-aer-conditionat-min.png";
+import HeroImageMobile from "../assets/hero-image-instalare-aer-conditionat-min-p-500.png";
+import HeroImageMobileLarge from "../assets/hero-image-instalare-aer-conditionat-min.png";
 
 const Hero = () => {
   return (
@@ -26,7 +26,7 @@ const Hero = () => {
             ></div>
           </button>
         </div>
-        <ButtonServicii />
+        <ButtonService />
       </div>
       <div className={classes["right-block"]}>
         <img

@@ -1,0 +1,22 @@
+.main-row {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  align-items: center;
+  justify-items: end;
+  &:nth-of-type(even) {
+    grid-template-columns: 1.5fr 0.5fr;
+    justify-items: start;
+    p {
+      order: -1;
+    }
+  }
+  &__img-container {
+    display: flex;
+    padding: 0 2em 0 0.4em;
+  }
+  p {
+    max-width: 35vw;
+    padding: 0 2em 0 0.4em;
+    border-left: solid 2px rgba(73, 156, 47, 0.12);
+  }
+}

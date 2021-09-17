@@ -10,10 +10,14 @@
   background-color: #2f489c;
   border-radius: 5px;
   border: none;
+  -webkit-box-shadow: 3px 4px 5px -3px #000;
   box-shadow: 3px 4px 5px -3px #000;
   &:hover {
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
     background-color: rgba(77, 104, 193, 0.61);
+    -webkit-box-shadow: 5px 6px 15px -6px #000;
     box-shadow: 5px 6px 15px -6px #000;
     cursor: pointer;
     color: black;

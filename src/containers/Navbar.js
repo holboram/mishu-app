@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Button from "./Button";
-import { NavLink } from "react-router-dom";
-import "./Navbar.css";
-import logo from "../images/logo-servicii-tehnice.svg";
-import telefon from "../images/telefon-servicii-tehnice-mobile.svg";
+import Button from "../components/Button";
+import { NavLink, Link } from "react-router-dom";
+import "./Navbar.scss";
+import logo from "../assets/logo-servicii-tehnice.svg";
+import phone from "../assets/telefon-servicii-tehnice-mobile.svg";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -15,14 +15,14 @@ const Navbar = () => {
   return (
     <header className="navbar-container">
       <nav className="navbar">
-        <NavLink to="/" className="navbar-logo" onClick={closeMobileMenu}>
+        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
           <img
             src={logo}
             loading="lazy"
             alt="Servicii Tehnice logo"
             width="114"
           />
-        </NavLink>
+        </Link>
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
         </div>
@@ -43,26 +43,26 @@ const Navbar = () => {
               activeClassName="active"
               className="nav-links"
               onClick={closeMobileMenu}
-              to="/servicii"
+              to="/service"
             >
               Servicii
             </NavLink>
           </li>
           <li className="nav-item border">
-            <NavLink
+            <Link
               // to="/sign-up"
               to="tel: 0747 835 456"
               className="nav-links-mobile"
               onClick={closeMobileMenu}
             >
               <img
-                src={telefon}
+                src={phone}
                 loading="lazy"
                 alt="Iconita numar de telefon 0747 457 394"
                 width="39"
               />
               <span>Suna</span>&nbsp;Acum
-            </NavLink>
+            </Link>
           </li>
         </ul>
         <Button />

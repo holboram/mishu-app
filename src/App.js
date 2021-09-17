@@ -1,11 +1,11 @@
 import React, { Fragment } from "react";
 import { Switch, Route } from "react-router-dom";
 
-import "./App.css";
-import Navbar from "./components/Navbar";
+import "./App.scss";
+import Navbar from "./containers/Navbar";
 
-import Servicii from "./components/pages/Servicii";
-import Acasa from "./components/pages/Acasa";
+import Service from "./containers/pages/Service";
+import Home from "./containers/pages/Home";
 
 const App = () => {
   return (
@@ -13,8 +13,8 @@ const App = () => {
       <Navbar />
 
       <Switch>
-        <Route path="/" exact component={Acasa} />
-        <Route path="/servicii" exact component={Servicii} />
+        <Route path="/" exact component={Home} />
+        <Route path="/service" exact component={Service} />
       </Switch>
     </Fragment>
   );
