@@ -1,6 +1,7 @@
 import React, { Fragment, useEffect, useState } from "react";
 import Hero from "../../components/Hero";
 import HomeMainElement from "../../components/HomeMainElement";
+import CTA from "../../components/CTA";
 
 import classes from "./Home.module.scss";
 
@@ -52,6 +53,7 @@ const Home = () => {
             );
           })}
       </section>
+      <CTA />
     </Fragment>
   );
 };

@@ -12,4 +12,12 @@
   padding: 50px 60px 170px 60px;
   max-width: 1440px;
   margin: 0 auto;
+  &__heading {
+    margin: 0.25em 0 1.25em 0;
+    color: #1e3850;
+    font-size: 2.3em;
+    font-weight: 600;
+    line-height: 2.313em;
+    text-align: center;
+  }
 }

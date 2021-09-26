@@ -1,0 +1,21 @@
+.cta-section {
+  min-height: 100vh;
+  background-image: url("../assets/client-satisfacut-aer-conditionat-min.jpg");
+  background-position: 100% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  &__heading {
+    color: #020b13;
+    font-weight: 600;
+    font-size: 2.1em;
+    line-height: 1.1em;
+    letter-spacing: 0.001em;
+  }
+  &__paragraph {
+    color: #291111;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.125em;
+  }
+}
