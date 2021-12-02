@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonService from "./ButtonService";
+import Button from "./Button";
 import classes from "./Hero.module.scss";
 
 import HeroImage from "../assets/hero-image-instalare-aer-conditionat-min.png";
@@ -18,15 +18,26 @@ const Hero = () => {
         </p>
         <div className={classes["left-block__container-cta"]}>
           <div className={classes["left-block__cta-text"]}>Sună Acum</div>
-          <button className={classes["left-block__btn-phone-no"]}>
-            <b>0747 457 394</b>
-            <div className={classes["left-block__btn-borders"]}></div>
-            <div
-              className={`${classes["left-block__btn-borders"]} ${classes["left-block__btn-borders--purple"]}`}
-            ></div>
-          </button>
+          <div className={classes["left-block__btn-phone-no-wrapper"]}>
+            <button className={classes["left-block__btn-phone-no"]}>
+              <b>0747 457 394</b>
+              <div
+                className={`${classes["left-block__btn-borders"]} ${classes["left-block__btn-borders--moved"]}`}
+              ></div>
+              <div
+                className={`${classes["left-block__btn-borders"]} ${classes["left-block__btn-borders--purple"]}`}
+              ></div>
+            </button>
+            <button className={classes["left-block__btn-phone-no"]}>
+              <b>0747 457 394</b>
+              <div className={classes["left-block__btn-borders"]}></div>
+              <div
+                className={`${classes["left-block__btn-borders"]} ${classes["left-block__btn-borders--purple"]}`}
+              ></div>
+            </button>
+          </div>
         </div>
-        <ButtonService />
+        <Button text={"Service"} />
       </div>
       <div className={classes["right-block"]}>
         <img

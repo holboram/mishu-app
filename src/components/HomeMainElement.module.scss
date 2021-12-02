@@ -3,11 +3,17 @@
   grid-template-columns: 0.5fr 1.5fr;
   align-items: center;
   justify-items: end;
+  &:not(:last-child) {
+    margin-bottom: 5em;
+  }
   &:nth-of-type(even) {
     grid-template-columns: 1.5fr 0.5fr;
     justify-items: start;
     p {
       order: -1;
+    }
+    div {
+      padding: 0 0.4em 0 2em;
     }
   }
   &__img-container {
@@ -20,7 +26,7 @@
     font-size: 1.07em;
     line-height: 1.35em;
     max-width: 35vw;
-    padding: 0 2em 0 0.4em;
+    padding: 0 0 0 0.4em;
     border-left: solid 2px rgba(73, 156, 47, 0.12);
   }
 }

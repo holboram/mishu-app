@@ -5,17 +5,48 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.cta-content {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px;
+  max-width: 32%;
+  position: sticky;
+  left: 361px;
+  top: 199px;
+  background-color: rgba(131, 47, 156, 0.08);
   &__heading {
     color: #020b13;
     font-weight: 600;
     font-size: 2.1em;
     line-height: 1.1em;
     letter-spacing: 0.001em;
+    margin-bottom: 10px;
   }
   &__paragraph {
     color: #291111;
     font-weight: 400;
     font-size: 1em;
     line-height: 1.125em;
+    margin: 1.3em 0 3.5em;
+    max-width: 45vw;
+  }
+  &__action-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__action {
+    display: inline;
+    color: #140303;
+    font-weight: 900;
+    font-size: 1.9em;
+    line-height: 1.3em;
+    padding-bottom: 0.2em;
+    margin-right: 10px;
   }
 }

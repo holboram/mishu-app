@@ -73,7 +73,7 @@
 }
 
 .nav-links.active {
-  background-color: tan;
+  color: #326322;
 }
 
 .fa-bars {
@@ -92,6 +92,10 @@
   /* Table View */
   .navbar-container {
     padding: 0 50px;
+  }
+
+  .nav-links.active {
+    color: #499c2f;
   }
 }
 @media screen and (max-width: 767px) {
@@ -129,6 +133,7 @@
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     z-index: 1;
+    overflow: hidden;
   }
 
   .nav-links {

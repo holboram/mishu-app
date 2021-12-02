@@ -1,21 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import classes from "./Button.module.scss";
-import phone from "../assets/telefon-servicii-tehnice.svg";
 
-const Button = () => {
+const Button = (props) => {
   return (
-    <Link to="tel: 0747 835 456">
-      <button className={classes["btn"]}>
-        <img
-          src={phone}
-          loading="lazy"
-          alt="Iconita numar de telefon 0747 457 394"
-          width="39"
-        />
-        0747 835 456
-      </button>
-    </Link>
+    <button className={classes["btn-servicii"]}>
+      <Link to="/servicii" className={classes["btn-servicii-link"]}>
+        {props.text}
+      </Link>
+    </button>
   );
 };
 

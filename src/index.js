@@ -1,8 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-// import "../node_modules/normalize.css/normalize.scss";
-
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 

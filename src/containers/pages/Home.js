@@ -15,18 +15,18 @@ const Home = () => {
       },
     })
       .then(function (response) {
-        console.log(response);
+        // console.log(response);
         return response.json();
       })
       .then(function (myJson) {
-        console.log(myJson);
+        // console.log(myJson);
         setData(myJson);
       });
   };
   useEffect(() => {
     getData();
   }, []);
-  console.log(process.env.PUBLIC_URL);
+  // console.log(process.env.PUBLIC_URL);
   return (
     <Fragment>
       <Hero />

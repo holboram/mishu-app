@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Button from "../components/Button";
+import ButtonPhoneNo from "../components/ButtonPhoneNo";
 import { NavLink, Link } from "react-router-dom";
 import "./Navbar.scss";
 import logo from "../assets/logo-servicii-tehnice.svg";
@@ -50,7 +50,6 @@ const Navbar = () => {
           </li>
           <li className="nav-item border">
             <Link
-              // to="/sign-up"
               to="tel: 0747 835 456"
               className="nav-links-mobile"
               onClick={closeMobileMenu}
@@ -65,7 +64,7 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-        <Button />
+        <ButtonPhoneNo />
       </nav>
     </header>
   );
