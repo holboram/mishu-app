@@ -1,0 +1,12 @@
+.mobile-btn-phone {
+  display: none;
+  position: fixed;
+  top: 350px;
+  right: 50px;
+}
+
+@media screen and (max-width: 479px) {
+  .mobile-btn-phone {
+    display: block;
+  }
+}

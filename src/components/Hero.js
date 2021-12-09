@@ -20,24 +20,31 @@ const Hero = () => {
           <div className={classes["left-block__cta-text"]}>Sună Acum</div>
           <div className={classes["left-block__btn-phone-no-wrapper"]}>
             <button className={classes["left-block__btn-phone-no"]}>
-              <b>0747 457 394</b>
-              <div
-                className={`${classes["left-block__btn-borders"]} ${classes["left-block__btn-borders--moved"]}`}
-              ></div>
-              <div
-                className={`${classes["left-block__btn-borders"]} ${classes["left-block__btn-borders--purple"]}`}
-              ></div>
+              <a href="tel: 0747 835 456">
+                <b>0747 457 394</b>
+                <div
+                  className={`${classes["left-block__btn-borders"]} ${classes["left-block__btn-borders--moved"]}`}
+                ></div>
+                <div
+                  className={`${classes["left-block__btn-borders"]} ${classes["left-block__btn-borders--purple"]}`}
+                ></div>
+              </a>
             </button>
             <button className={classes["left-block__btn-phone-no"]}>
-              <b>0747 457 394</b>
-              <div className={classes["left-block__btn-borders"]}></div>
-              <div
-                className={`${classes["left-block__btn-borders"]} ${classes["left-block__btn-borders--purple"]}`}
-              ></div>
+              <a href="tel: 0747 835 456">
+                <b>0747 457 394</b>
+                <div className={classes["left-block__btn-borders"]}></div>
+                <div
+                  className={`${classes["left-block__btn-borders"]} ${classes["left-block__btn-borders--purple"]}`}
+                ></div>
+              </a>
             </button>
           </div>
         </div>
-        <Button text={"Service"} />
+        <Button
+          text={"Servicii"}
+          className={classes["left-block__btn-service"]}
+        />
       </div>
       <div className={classes["right-block"]}>
         <img

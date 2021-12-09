@@ -1,32 +1,43 @@
 .main-row {
-  display: grid;
-  grid-template-columns: 0.5fr 1.5fr;
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
   align-items: center;
-  justify-items: end;
-  &:not(:last-child) {
-    margin-bottom: 5em;
-  }
-  &:nth-of-type(even) {
-    grid-template-columns: 1.5fr 0.5fr;
-    justify-items: start;
-    p {
-      order: -1;
-    }
-    div {
-      padding: 0 0.4em 0 2em;
-    }
-  }
-  &__img-container {
+  img {
     display: flex;
-    padding: 0 2em 0 0.4em;
+    max-width: 100%;
   }
-  p {
-    color: rgba(10, 32, 53, 0.82);
-    font-weight: 400;
-    font-size: 1.07em;
-    line-height: 1.35em;
-    max-width: 35vw;
-    padding: 0 0 0 0.4em;
-    border-left: solid 2px rgba(73, 156, 47, 0.12);
+
+  &__text {
+    max-width: 75%;
+  }
+}
+
+.main-row:nth-child(4n + 1) {
+  grid-row-start: 3;
+}
+
+@media screen and (max-width: 991px) {
+  .main-row:nth-child(4n + 1) {
+    grid-row-start: 5;
+  }
+  .main-row:nth-child(2n + 4) {
+    grid-row-start: 4;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-row {
+    &__text {
+      max-width: 85%;
+    }
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .main-row {
+    &__text {
+      max-width: 100%;
+    }
   }
 }

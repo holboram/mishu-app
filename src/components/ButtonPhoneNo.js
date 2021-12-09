@@ -1,11 +1,9 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 import classes from "./ButtonPhoneNo.module.scss";
 import phone from "../assets/telefon-servicii-tehnice.svg";
 
 const ButtonPhoneNo = () => {
   return (
-    // <Link href="tel: 0747 835 456">
     <button className={classes["btn"]}>
       <a href="tel: 0747 835 456">
         <img

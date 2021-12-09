@@ -2,6 +2,7 @@ import React, { Fragment, useEffect, useState } from "react";
 import Hero from "../../components/Hero";
 import HomeMainElement from "../../components/HomeMainElement";
 import CTA from "../../components/CTA";
+import BtnMobilePhone from "../../components/BtnMobilePhone.js";
 
 import classes from "./Home.module.scss";
 
@@ -29,6 +30,7 @@ const Home = () => {
   // console.log(process.env.PUBLIC_URL);
   return (
     <Fragment>
+      <BtnMobilePhone />
       <Hero />
 
       <section className={classes["main-section"]}>

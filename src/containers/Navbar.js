@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ButtonPhoneNo from "../components/ButtonPhoneNo";
 import { NavLink, Link } from "react-router-dom";
 import "./Navbar.scss";
@@ -11,6 +11,22 @@ const Navbar = () => {
   const handleClick = () => setClick(!click);
 
   const closeMobileMenu = () => setClick(false);
+
+  useEffect(() => {
+    if (click) {
+      document.body.style.overflow = "hidden";
+      const close = (e) => {
+        if (e.keyCode === 27) {
+          closeMobileMenu();
+        }
+      };
+      window.addEventListener("keydown", close);
+      return () => {
+        document.body.style.overflow = "unset";
+        window.removeEventListener("keydown", close);
+      };
+    }
+  });
 
   return (
     <header className="navbar-container">
@@ -35,7 +51,7 @@ const Navbar = () => {
               onClick={closeMobileMenu}
               to="/"
             >
-              Acasă
+              ACASĂ
             </NavLink>
           </li>
           <li className="nav-item">
@@ -45,12 +61,12 @@ const Navbar = () => {
               onClick={closeMobileMenu}
               to="/service"
             >
-              Servicii
+              SERVICII
             </NavLink>
           </li>
           <li className="nav-item border">
-            <Link
-              to="tel: 0747 835 456"
+            <a
+              href="tel: 0747 835 456"
               className="nav-links-mobile"
               onClick={closeMobileMenu}
             >
@@ -61,7 +77,7 @@ const Navbar = () => {
                 width="39"
               />
               <span>Suna</span>&nbsp;Acum
-            </Link>
+            </a>
           </li>
         </ul>
         <ButtonPhoneNo />

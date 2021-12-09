@@ -101,7 +101,7 @@
 @media screen and (max-width: 767px) {
   /* Mobile Landscape View */
   .navbar-container {
-    padding: 0 40px;
+    padding: 0 25px;
     margin: 0 auto;
   }
 
@@ -132,7 +132,7 @@
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    z-index: 1;
+    z-index: 3;
     overflow: hidden;
   }
 
@@ -214,7 +214,7 @@
 @media screen and (max-width: 479px) {
   /* Mobile Portrait View */
   .navbar-container {
-    padding: 0 30px;
+    padding: 0;
   }
 
   .menu-icon {

@@ -12,7 +12,7 @@
   -webkit-box-pack: stretch;
   -ms-flex-pack: stretch;
   justify-content: stretch;
-  padding: 5vh 60px 10vh 60px;
+  padding: 5vh 60px 5vh 60px;
   margin: auto;
 }
 
@@ -174,15 +174,68 @@
 @media screen and (max-width: 767px) {
   .hero-section {
     grid-template-columns: 1fr;
+    padding: 2.5vh 30px 2.5vh 30px;
   }
 
   .left-block {
+    padding-left: 30px;
     margin-bottom: 30px;
     h1 {
       font-size: 2.8em;
     }
     p {
       margin: 0.95em 0 1.85em 0;
+    }
+  }
+
+  .right-block {
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .left-block {
+    margin-right: 0;
+    margin-bottom: 20px;
+    padding-left: 0;
+    h1 {
+      font-weight: 600;
+      font-size: 2.3em;
+      letter-spacing: -0.03em;
+      line-height: 1em;
+    }
+
+    p {
+      letter-spacing: 0em;
+      margin: 0.75em 0 1.65em 0;
+    }
+
+    &__cta-text {
+      margin: 0 1em 0.5em 0;
+    }
+
+    &__container-cta {
+      margin-bottom: 1.5em;
+    }
+
+    &__container-cta {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .hero-section {
+    padding: 0 8px;
+  }
+
+  .right-block {
+    padding: 0;
+  }
+
+  .left-block {
+    &__btn-service {
+      display: none;
     }
   }
 }
