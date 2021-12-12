@@ -19,8 +19,8 @@ const Hero = () => {
         <div className={classes["left-block__container-cta"]}>
           <div className={classes["left-block__cta-text"]}>Sună Acum</div>
           <div className={classes["left-block__btn-phone-no-wrapper"]}>
-            <button className={classes["left-block__btn-phone-no"]}>
-              <a href="tel: 0747 835 456">
+            <a href="tel: 0747 835 456">
+              <button className={classes["left-block__btn-phone-no"]}>
                 <b>0747 457 394</b>
                 <div
                   className={`${classes["left-block__btn-borders"]} ${classes["left-block__btn-borders--moved"]}`}
@@ -28,8 +28,8 @@ const Hero = () => {
                 <div
                   className={`${classes["left-block__btn-borders"]} ${classes["left-block__btn-borders--purple"]}`}
                 ></div>
-              </a>
-            </button>
+              </button>
+            </a>
             <button className={classes["left-block__btn-phone-no"]}>
               <a href="tel: 0747 835 456">
                 <b>0747 457 394</b>

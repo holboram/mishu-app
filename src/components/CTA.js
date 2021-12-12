@@ -15,7 +15,7 @@ const CTA = () => {
         </p>
         <div className={classes["cta-content__action-wrapper"]}>
           <span className={classes["cta-content__action"]}>Sună Acum</span>
-          <Button telNo={"56456466"} />
+          <Button telNo={56456466} />
         </div>
       </div>
     </section>

@@ -46,13 +46,15 @@
   cursor: pointer;
 }
 
-.nav-item:hover {
-  -webkit-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  border-style: none none solid;
-  border-color: transparent transparent #000;
-  border-width: 0px 0px 2px;
+@media (hover: hover) {
+  .nav-item:hover {
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    border-style: none none solid;
+    border-color: transparent transparent #000;
+    border-width: 0px 0px 2px;
+  }
 }
 
 .nav-item:visited {
@@ -144,9 +146,11 @@
     display: table;
   }
 
-  .nav-links:hover {
-    background-color: #2f489c;
-    border-radius: 0;
+  @media (hover: hover) {
+    .nav-links:hover {
+      background-color: #2f489c;
+      border-radius: 0;
+    }
   }
 
   .navbar-logo {
@@ -199,12 +203,14 @@
     margin-right: 15px;
   }
 
-  .nav-links-mobile:hover {
-    background: #fff;
-    color: #2f489c;
-    -webkit-transition: 250ms;
-    -o-transition: 250ms;
-    transition: 250ms;
+  @media (hover: hover) {
+    .nav-links-mobile:hover {
+      background: #fff;
+      color: #2f489c;
+      -webkit-transition: 250ms;
+      -o-transition: 250ms;
+      transition: 250ms;
+    }
   }
 
   button {

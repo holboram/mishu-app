@@ -1,4 +1,5 @@
-.btn-servicii {
+.btn-servicii-link {
+  text-align: center;
   display: inline-block;
   padding: 0.688em 3em;
   font-family: Roboto, sans-serif;
@@ -13,24 +14,22 @@
   -webkit-box-shadow: 3px 4px 5px -3px #000;
   box-shadow: 3px 4px 5px -3px #000;
   width: 260px;
-  &:hover {
-    -webkit-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-    background-color: rgba(77, 104, 193, 0.61);
-    -webkit-box-shadow: 5px 6px 15px -6px #000;
-    box-shadow: 5px 6px 15px -6px #000;
-    cursor: pointer;
-    color: black;
+  @media (hover: hover) {
+    &:hover {
+      -webkit-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out;
+      background-color: rgba(77, 104, 193, 0.61);
+      -webkit-box-shadow: 5px 6px 15px -6px #000;
+      box-shadow: 5px 6px 15px -6px #000;
+      cursor: pointer;
+      color: black;
+    }
   }
 }
 
-.btn-servicii-link {
-  color: white;
-}
-
 @media screen and (max-width: 330px) {
-  .btn-servicii {
+  .btn-servicii-link {
     width: 100%;
   }
 }
